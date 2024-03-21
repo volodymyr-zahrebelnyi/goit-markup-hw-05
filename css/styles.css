@@ -739,8 +739,8 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
 .privacy-check-item {
@@ -758,7 +758,7 @@ ul {
   margin-right: 8px;
 }
 
-.modal-check:checked + .privacy-check-text > .privacy-check-icon {
+.modal-check:checked + .privacy-check-text > .privacy-check-item {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
