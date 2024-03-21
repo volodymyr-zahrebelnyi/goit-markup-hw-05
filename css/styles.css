@@ -497,34 +497,42 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-form-label {
 }
 
 .footer-input {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
   border: 1px solid #fff;
   border-radius: 4px;
+  padding-left: 16px;
   width: 264px;
   height: 40px;
+  color: #ffffff;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .footer-input::placeholder {
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
   color: #fff;
   padding-top: 8px;
-  padding-left: 16px;
 }
 
 .footer-form-button {
+  min-width: 165px;
   border-radius: 4px;
   padding: 8px 24px;
   border: none;
+  cursor: pointer;
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -534,16 +542,17 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
 }
 
 .footer-button-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 
 .backdrop {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
@@ -712,21 +721,25 @@ ul {
   background-color: #404bbf;
 }
 
+.modal-privacy-check {
+  margin-bottom: 24px;
+}
+
 .modal-check {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
-.check-text {
+.privacy-check-text {
   font-size: 12px;
-  line-height: 1.167;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
   align-items: center;
 }
 
-.check-text span {
+.privacy-check-icon {
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -739,7 +752,7 @@ ul {
   fill: transparent;
 }
 
-.modal-check:checked + .check-text span {
+.modal-check:checked + .privacy-check-icon {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -770,6 +783,7 @@ ul {
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
